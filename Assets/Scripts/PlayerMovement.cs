@@ -59,7 +59,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.idle;
-            playerAnimator.SetBool("running", false);
         }
 
         if(playerRigidbody.velocity.y > .1f)
