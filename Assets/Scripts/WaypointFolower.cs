@@ -6,11 +6,15 @@ public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private GameObject[] waypoints;
     private int currentWaypointIndex = 0;
+    [SerializeField] private bool allowMovement = true;
 
     [SerializeField] private float speed = 2f;
 
     private void Update()
     {
+
+        if (!allowMovement) return;
+
         if (Vector2.Distance(waypoints[currentWaypointIndex].transform.position, transform.position) < .1f)
         {
             currentWaypointIndex++;
