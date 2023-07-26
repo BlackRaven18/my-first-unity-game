@@ -7,6 +7,9 @@ public class StartMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int scenesNumber = SceneManager.sceneCountInBuildSettings;
+        int nextSceneIndex = (SceneManager.GetActiveScene().buildIndex + 1) % scenesNumber;
+
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }
