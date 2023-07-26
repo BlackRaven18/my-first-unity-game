@@ -8,6 +8,7 @@ public class MainManager : MonoBehaviour
 
     public int cherries = 0;
     public bool isPaused = false;
+    public bool playBackgroundMusic = true;
 
     public void Reset()
     {
