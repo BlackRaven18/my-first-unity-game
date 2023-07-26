@@ -26,6 +26,7 @@ public class PlayerLife : MonoBehaviour
 
     private void Die()
     {
+        MainManager.Instance.cherries = 0;
         playerRigidbody.bodyType = RigidbodyType2D.Static;
         playerAnimator.SetTrigger("death");
         deathSoundEffect.Play();
