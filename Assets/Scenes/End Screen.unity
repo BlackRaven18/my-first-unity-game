@@ -889,7 +889,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLAY AGAIN
+  m_Text: MAIN MENU
 --- !u!222 &1923058021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1208,7 +1208,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1421789681}
   - {fileID: 161906931}
+  - {fileID: 1421789681}
   - {fileID: 258521556}
   - {fileID: 433358677}

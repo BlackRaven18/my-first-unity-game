@@ -7,6 +7,7 @@ public class MainManager : MonoBehaviour
     public static MainManager Instance;
 
     public int cherries = 0;
+    public bool isPaused = false;
 
     public void Reset()
     {

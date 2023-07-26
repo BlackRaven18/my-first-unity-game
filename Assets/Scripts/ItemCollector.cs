@@ -10,10 +10,11 @@ public class ItemCollector : MonoBehaviour
     [SerializeField] private Text cherriesText;
     [SerializeField] private AudioSource collectionSoundEffect;
 
-    private MainManager mainManager = MainManager.Instance;
+    private MainManager mainManager;
 
     private void Start()
     {
+        mainManager = MainManager.Instance;
         cherriesText.text = "Cherries: " + mainManager.cherries;
     }
 

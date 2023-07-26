@@ -754,6 +754,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29afe7a50ddb7344fb5a4dfc71052fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cherries: 0
+  isPaused: 0
 --- !u!4 &1296427045
 Transform:
   m_ObjectHideFlags: 0
@@ -1266,8 +1268,8 @@ Animator:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1421789681}
   - {fileID: 161906931}
+  - {fileID: 1296427045}
+  - {fileID: 1421789681}
   - {fileID: 258521556}
   - {fileID: 433358677}
-  - {fileID: 1296427045}
