@@ -574,6 +574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cherries: 0
   isPaused: 0
+  playBackgroundMusic: 1
 --- !u!4 &527963142
 Transform:
   m_ObjectHideFlags: 0
@@ -109359,6 +109360,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1783677883105072004, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783677883105072004, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783677883105072004, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707579763094940834, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4707579763094940834, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6274081779604229236, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -109442,6 +109463,18 @@ PrefabInstance:
     - target: {fileID: 6326643502236624061, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
       propertyPath: m_Name
       value: LevelCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596013584431632786, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596013584431632786, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7596013584431632786, guid: 0a7255d2039589e45861701e03b8b923, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

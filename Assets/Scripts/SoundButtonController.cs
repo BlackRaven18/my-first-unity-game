@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class SoundButtonController : MonoBehaviour
 {
     private MainManager mainManager;
 
+    [SerializeField] private Slider volumeSlider;
     [SerializeField] private Sprite SoundImageOn;
     [SerializeField] private Sprite SoundImageOff;
 
@@ -16,6 +18,19 @@ public class SoundButtonController : MonoBehaviour
         mainManager = MainManager.Instance;
         backgroundMusic = GetComponent<AudioSource>();
         checkIfShouldPlay();
+    }
+
+    public void manageButtonIcon()
+    {
+        Console.WriteLine(AudioListener.volume);
+        if(AudioListener.volume <= 0)
+        {
+            gameObject.GetComponent<Image>().sprite = SoundImageOff;
+        }
+        else
+        {
+            gameObject.GetComponent<Image>().sprite = SoundImageOn;
+        }
     }
 
     private void checkIfShouldPlay()
@@ -34,6 +49,10 @@ public class SoundButtonController : MonoBehaviour
 
     public void SwitchOnOff()
     {
+
+        volumeSlider.gameObject.SetActive(!volumeSlider.gameObject.activeSelf);
+       
+/*
         if (mainManager.playBackgroundMusic)
         {
             mainManager.playBackgroundMusic = false;
@@ -45,7 +64,7 @@ public class SoundButtonController : MonoBehaviour
             mainManager.playBackgroundMusic = true;
             backgroundMusic.Play();
             gameObject.GetComponent<Image>().sprite = SoundImageOn;
-        }
+        }*/
     }
 
 
