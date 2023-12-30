@@ -6,7 +6,6 @@ public class SoundButtonController : MonoBehaviour
 {
     private MainManager mainManager;
 
-    
     [SerializeField] private Sprite SoundImageOn;
     [SerializeField] private Sprite SoundImageOff;
 
@@ -48,6 +47,7 @@ public class SoundButtonController : MonoBehaviour
             gameObject.GetComponent<Image>().sprite = SoundImageOn;
         }
     }
+
 
 
 
