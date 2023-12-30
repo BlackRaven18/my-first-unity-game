@@ -10,7 +10,10 @@ public class StartMenu : MonoBehaviour
         int scenesNumber = SceneManager.sceneCountInBuildSettings;
         int nextSceneIndex = (SceneManager.GetActiveScene().buildIndex + 1) % scenesNumber;
 
-        MainManager.Instance.cherries = 0;
+        MainManager mainManager = MainManager.Instance;
+        //mainManager.cherries = 0;
+
+        //MainManager.Instance.cherries = 0;
 
         SceneManager.LoadScene(nextSceneIndex);
     }
