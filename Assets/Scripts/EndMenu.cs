@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class EndMenu : MonoBehaviour
 {
     [SerializeField] private Text cherriesTextField;
+    private MainManager mainManager;
 
     private void Start()
     {
-        cherriesTextField.text += MainManager.Instance.cherries;
+        mainManager = MainManager.Instance;
+        cherriesTextField.text += mainManager.cherries;
     }
     public void Quit()
     {
